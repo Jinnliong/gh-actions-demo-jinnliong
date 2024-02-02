@@ -11,5 +11,6 @@ jobs:
          echo "Listing files in the repository(${{ github.workspace }}).."
          ls ${{ github.workspace }}
      - run: echo "Job's status is ${{ job.status }}"
-     - name: Print README.md
-        run: cat README.md
+     - name: Cat README.md
+        run: |
+         cat README.md
