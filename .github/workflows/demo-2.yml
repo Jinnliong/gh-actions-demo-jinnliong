@@ -2,23 +2,19 @@ name: Demo Workflow #2
 on:
   push:
     branches:
-      - main # Assuming you want this workflow to trigger only on pushes to the main branch
-
+      - main
 jobs:
   Demo-Job:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-
       - name: List files in the repository
         run: |
           echo "Listing files in the repository(${{ github.workspace }})..."
           ls ${{ github.workspace }}
-
       - name: Show job status
         run: echo "Job's status is ${{ job.status }}"
-
       - name: Cat README.md
         run: |
           cat README.md
