@@ -12,4 +12,4 @@ jobs:
          ls ${{ github.workspace }}
      - run: echo "Job's status is ${{ job.status }}"
      - name: Print README.md
-        run: cat README.md
+        run: cat /c/Users/aloha/OneDrive/Apps/Codes/gh-actions-demo-jinnliong/README.md
