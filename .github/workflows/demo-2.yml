@@ -7,7 +7,6 @@ on:
 jobs:
   Demo-Job:
     runs-on: ubuntu-latest
-    description: This job checks out the repository code, lists files, and cat the README.md
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
